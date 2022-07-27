@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, Arial;
+  font-size: 24px;
+  line-height: 1.5;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  margin-bottom: 32px;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 106px;
+}
+h2 {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 500;
+  font-style: italic;
+}
+/* banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: center no-repeat url('img/banner.png');
+  background-size: cover;
+}
+.banner span {
+  line-height: 42px;
+}
+
+.banner ul img:hover {
+  filter: brightness(150%);
+}
+
+.content {
+  color: #fff;
+  font-style: italic;
+}
+.content p {
+  margin-bottom: 40px;
+}
+.content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 56px auto;
+}
+.about img {
+  margin: 40px auto 20px;
+}
+.aboutMe {
+  font-weight: bold;
+  font-style: italic;
+}
+.aboutMe li:nth-child(2) {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.aboutList {
+  margin: 0 auto;
+  width: 384px;
+  border-top: 1px solid #000;
+}
+.aboutList li {
+  margin-top: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 42px;
+  font-style: italic;
+}
+.aboutList li::before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+/* brand */
+.brand {
+  padding: 56px 0 160px 0;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+.brand h3 {
+  line-height: 42px;
+  margin: 12px auto 32px;
+}
+.brand p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 68px;
+  font-style: italic;
+}
+.brand ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.brand ul li:nth-child(1) {
+  margin-bottom: 40px;
+}
+.brand ul li:nth-child(2) {
+  margin-right: 24px;
+}
+
+/* other-works */
+.other-works {
+  padding: 56px 0 144px 0;
+  text-align: center;
+}
+.other-works p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 16px auto 56px;
+}
+
+.other-works ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.other-works ul li h4 {
+  margin: 16px 0 48px;
+  font-size: 20px;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+/* contact */
+.contact {
+  padding: 64px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+.contact ul li {
+  margin-top: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  font-style: italic;
+}
+.contact ul li a {
+  text-decoration: none;
+  color: #fff;
+}
